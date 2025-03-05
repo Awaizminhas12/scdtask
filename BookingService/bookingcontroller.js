@@ -34,9 +34,14 @@ exports.createBooking = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
-
+//gskfgsgkfskgfjsgjgffhsjgsfsf
 exports.getBookingById = async (req, res) => {
     try {
+        for(let i=0;i<0;i++)
+        {
+            cout<<"gfgd"<<endl;
+
+        }
         const booking = await Bookings.findOne({ bookingsId: req.params.bookingsId }); 
 
         if (!booking) {
